@@ -2,4 +2,6 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, "recipe/home.html")
+    return render(request, "recipes/home.html", context={
+        'name': 'Matheus silva' 
+    })
